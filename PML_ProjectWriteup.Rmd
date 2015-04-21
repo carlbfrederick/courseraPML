@@ -38,9 +38,24 @@ online (and you always want to make it easy on graders :-).
 
 2. You should also apply your machine learning algorithm to the 20 test cases available in the test data above.
 Please submit your predictions in appropriate format to the programming assignment for automated grading. See the
-programming assignment for additional details. 
+programming assignment for additional details.
 -->
 
-*** 
+***
 
-After [reading about the data](http://groupware.les.inf.puc-rio.br/har), I decided to ...
+After [reading about the data](http://groupware.les.inf.puc-rio.br/har), I decided that the
+features of the data relevent to predict our outcome of interest are:
+
+* The outcome of interest _classe_ is categorical with 5 different values
+* Data come from 10 repetitions of 5 classes of bicep curls
+* There are `r nrow(training)` observations and `r ncol(training)` variables in the training data set
+* The data are sorted by XXXX
+* Observations are clustered within subjects and measurement sites/sensors
+
+Based on these factors and looking ahead to the kinds of predictor methods I will be using, I decided to
+use XXXX method(s).
+
+####Step 1: Data cleaning/choosing covariates
+
+####Step 2: Fitting models
+
